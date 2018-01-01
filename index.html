@@ -7,38 +7,42 @@
     <title>Pythagoras</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-<header>
-    <h3>Checking if the three entered values can be sides of a right triangle.</h3>
-</header>
-<main>
-    <section>
-        <div class="container">
-            <h4>Please enter three values</h4>
-            <form>
+    <header>
+        <h3>Checking if the three entered values can be sides of a right triangle.</h3>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <h4>Please enter three values</h4>
+
                 <label for="aSide"> Side a: </label>
                 <input type="text" id="aSide" autofocus><br>
+                <p id="aMessage"></p>
                 <label for="bSide">Side b: </label>
-                <input type="text"  id="bSide"><br>
+                <input type="text" id="bSide"><br>
                 <label for="cSide">Side c: </label>
-                <input type="text" id="cSide" ><br><br>
+                <input type="text" id="cSide"><br><br>
                 <input type="Submit" value="Check" onclick="checkPyth()">
-            </form>
-        </div>
-    </section>
-</main>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <p id="result"></p>
+            </div>
+        </section>
+    </main>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
 
-<script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>
